@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+body {
+    font-family: Arial;
+    text-align: center;
+    margin-top: 100px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+</style> <title>Free Dental Audit</title>
+</head>
+<body>
+
+    <h1>Dentists: Get 5–10 New Patients Every Month Without Ads</h1>
+
+<p>We will show you exactly why you are losing patients online.</p>
+
+<p>Free 5-minute audit. No obligation.</p>
+
+<form action="https://formspree.io/f/xxxxxxx" method="POST">
+    <label>Name:</label><br>
+    <input type="text"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email"><br><br>
+
+    <button type="submit">Get My Free Audit</button>
+
+    <p id="result" style="margin-top:20px; font-weight:bold;"></p>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("result").innerText =
+    "Audit Result: Your online presence score is 62/100. You are likely losing patients due to low Google visibility, weak website conversion, and inconsistent social media.";
+});
+</script>
+
+<p id="message"></p>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("message").innerText = "Thank you! We will contact you soon.";
+});
+</script>
+</html>
